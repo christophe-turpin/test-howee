@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test-howee';
+  rouge = "#AE423A";
+  jaune = "#F9EDEC";
+  gris = "#878787";
+  contours = "#FFC397";
 }
