@@ -1,0 +1,6 @@
+<app-card-number
+  *ngFor="let field of fields"
+  field="{{ field }}"
+></app-card-number>
+<button routerLink="resume" (click)="sendValue()">Send Value</button>
+<button (click)="clearValue()">Clear Value</button>
