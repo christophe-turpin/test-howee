@@ -1,6 +1,9 @@
-<div class="card-number">
-  <p>{{ this.field }}</p>
-  <p (click)="decrement()">-</p>
+<img alt="avatar-{{ field }}" src="../../../assets/{{ field }}.png" />
+<h4>{{ this.field | titlecase }}(s)</h4>
+<div class="inputDiv">
+  <button class="leftButton" mat-fab (click)="decrement()">
+    <mat-icon>remove</mat-icon>
+  </button>
   <input
     matInput
     max="10"
@@ -9,5 +12,7 @@
     [(ngModel)]="value"
     (ngModelChange)="changeValue(value)"
   />
-  <p (click)="increment()">+</p>
+  <button class="rightButton" mat-fab (click)="increment()">
+    <mat-icon>add</mat-icon>
+  </button>
 </div>

@@ -1,6 +1,12 @@
-<app-card-number
-  *ngFor="let field of fields"
-  field="{{ field }}"
-></app-card-number>
-<button routerLink="resume" (click)="sendValue()">Send Value</button>
-<button (click)="clearValue()">Clear Value</button>
+<h2>Combien de membres sont présents dans votre foyer ?</h2>
+<div class="cardDiv">
+  <app-card-number
+    *ngFor="let field of fields"
+    field="{{ field }}"
+  ></app-card-number>
+</div>
+<div class="buttonDiv">
+  <button mat-button routerLink="resume" (click)="sendValue()">
+    Ajouter mes gloutons
+  </button>
+</div>

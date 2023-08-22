@@ -7,7 +7,7 @@ import { State } from 'src/app/reducers/app.reducer';
 @Component({
   selector: 'app-card-number',
   templateUrl: './card-number.component.html',
-  styleUrls: ['./card-number.component.css']
+  styleUrls: ['./card-number.component.scss']
 })
 export class CardNumberComponent {
   @Input() field: string = "";
@@ -40,7 +40,7 @@ export class CardNumberComponent {
 
   changeValue(val:any) {
     if (typeof val === 'number') {
-      this.value = val > 0 && val < 10 ? val : 0;
+      this.value = val > 0 && val <= 10 ? val : 0;
     } else {
       this.value = 0;
     }
